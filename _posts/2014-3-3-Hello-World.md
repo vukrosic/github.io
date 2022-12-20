@@ -26,6 +26,11 @@ Now let's plot the differences between those 2 function on another graph - x rep
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
+Khm...**### THIS IS NOT A LOSS FUNCTION, THIS IS JUST TRAINING LOSS!!!**
+This was extremely confusing to me.
+
+
+
 To minimize the difference (loss) between $$f(x)_{predicted} and f(x)_{correct}$$, we need to minimize the difference (loss) function.
 Now there are other problems if they match too closely, but that is beyond this beginner's tutorial.
 
