@@ -20,7 +20,10 @@ To make things simple, let’s make these two functions linear.
 
 Both of the have the format
 
-$$f(x)=weight*x+bias$$.
+							## $$f(x)=weight*x+bias$$
+
+
+## $$f(x)=weight*x+bias$$.
 
 
 During the training, we know the values of $$x$$, the input data, and $$f(x)$$, the output, and we need to find $$weight$$ and $$bias$$ (slope and offset) to overlap these 2 functions.
