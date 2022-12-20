@@ -13,7 +13,7 @@ $$f(x)_{correct}$$ are the correct outputs given $$x$$ as input data.
 
 To make things simple, let’s make these two functions linear.
 
-![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/3%20Linear%20functions.jpg?raw=true)
+![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
 
 
 Both of the have the formula:
@@ -44,6 +44,8 @@ A small learning rate (step) will take too long to find the minimum, but a large
 
 
 In this simple function, this will get us to the global minimum, but in a more complex function we might end up in a local minimum, which is a much harder problem to solve.
+
+# More Dimensions
 
 What if the function has more inputs, for example x and y, and z as an output? To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the steepest descent. This optimization algorithm is called gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
 
