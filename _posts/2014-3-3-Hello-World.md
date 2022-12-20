@@ -20,6 +20,9 @@ First, let's plot functions of our model's predicted outputs and the corrent out
 
 ![2 funcs]({{site.baseurl}}/_posts/1 Two functions2.jpg)
 
+Here is can see 2 functions:
+$$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs gives the input data.
+Both of the have the format $$f(x)=w*x+b$$; where w is weight and b is bias.
 
 
 Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and the correct output $$y$$.
