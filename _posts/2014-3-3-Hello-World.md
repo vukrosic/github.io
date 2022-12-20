@@ -32,7 +32,10 @@ $$\frac{\partial f}{\partial x} = 2xsin(y)$$
 
 then we take a partial derivative of $$f$$ with respect to $$y$$
 
-$$\frac{\partial f}{\partial y} = x^2cos(y)$$
+$$\frac{\partial f}{\partial y} = \begin{bmatrix} x^2cos(y)\end{bmatrix}$$
+$$\frac{\partial f}{\partial y} = \begin{bmatrix} x^2cos(y)\\end{bmatrix}$$
+$$\frac{\partial f}{\partial y} = \begin{bmatrix} x^2cos(y)\end{bmatrix}\$$
+$$\frac{\partial f}{\partial y} = \begin{bmatrix} x^2cos(y)\\end{bmatrix}\$$
 ![Screenshot_aaaaa1.jpg]({{site.baseurl}}/_posts/Screenshot_aaaaa1.jpg)
 
 
