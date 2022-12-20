@@ -9,8 +9,11 @@ In this image you can see the functions of our model's predicted outputs and the
 $$f(x)_{predicted}$$ are the outputs of our model given $$x$$ as input data.
 $$f(x)_{correct}$$ are the correct outputs given $$x$$ as input data.
 
+**## Linear Functions**
+##** Linear Functions**
+## Linear Functions
 
-To make things simple. Let’s make these two functions linear.
+To make things simple, let’s make these two functions linear.
 
 ![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/3%20Linear%20functions.jpg?raw=true)
 
