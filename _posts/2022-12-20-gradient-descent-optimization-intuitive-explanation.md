@@ -37,11 +37,11 @@ For a certain value of the $$weight$$ **MAE** is 0, meaning that at that point o
 ![5 calculating Weight.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
 
 
-To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called **learning rate**. 
+To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will step to the left or right for a certain distance in the direction of the slope’s decrease and repeat the process. This stepping distance is called **learning rate**. 
 
 # Learning Rate
 
-A small learning rate (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the learning rate proportional to the slope. We do this until the slope is 0.
+A small **learning rate** (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the **learning rate** proportional to the slope. We do this until the slope is 0.
 
 
 In this simple function, this will get us to the global minimum, but in a more complex function we might end up in a local minimum, which is a much harder problem to solve.
