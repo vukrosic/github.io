@@ -15,8 +15,6 @@ published: true
 
 # Intuitive Understand Of Gradient Descent As Optimization Algorithm
 
-There are many optimizational algorithms in machine learning, some of which are:
-
 Gradient descent updates weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller. 
 
 It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
@@ -39,7 +37,7 @@ $$\frac{\partial f}{\partial y} = $$\begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end
 
 
 
-$$\nabla f = \begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end{bmatrix}$$
+$$\nabla f = \frac{\partial f}{\partial x} = \begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end{bmatrix}$$
 -------------------------
 
 
