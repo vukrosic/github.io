@@ -18,7 +18,6 @@ To make things simple, let’s make these two functions linear.
 
 Both of the have the formula:
 
-
 ## $$f(x)=weight*x+bias$$.
 
 Just $$weight$$ and $$bias$$ values are different.
