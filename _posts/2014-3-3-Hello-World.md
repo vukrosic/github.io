@@ -32,7 +32,10 @@ First we take the partial derivative with respect to x (so we treat y as a const
 
 then we take a partial derivative of $f with respect to $y
 
-$\pdv{f}{y} = x^2cos(y)$
+$$\pdv{f}{y} = x^2cos(y)$$
+\frac{df}{dx} = 2x\sin(y)
+$$\frac{df}{dx} = 2x\sin(y)$$
+
 
 \begin{document}
 $$\nabla \, , \nabla F$$
