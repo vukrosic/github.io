@@ -26,7 +26,7 @@ During the training, we know the values of $$x$$, the input data, and $$f(x)$$, 
 
 Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use a big computer to guess as many weight and bias values as possible and find the ones that match the correct values as best as possible.
 
-To measure the difference between **$$f(x)_{predicted}$$**  and  **$$f(x)_{correct}$$** , we will just **subtract** them and get the **absolute value**. This is a loss function called Mean **Absolute Error (_MAE_)**.
+To measure the difference between **$$f(x)_{predicted}$$**  and  **$$f(x)_{correct}$$** , we will just subtract them and get the absolute value. This is a loss function called Mean **Absolute Error (_MAE_)**.
 
 # Mean Absolute Error
 
@@ -37,11 +37,11 @@ For a certain value of the $$weight$$ **MAE** is 0, meaning that at that point o
 ![5 calculating Weight.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
 
 
-To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will step to the left or right for a certain distance in the direction of the slope’s decrease and repeat the process. This stepping distance is called **learning rate**. 
+To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will step to the left or right for a certain distance in the direction of the slope’s decrease and repeat the process. This stepping distance is called **$$learning rate$$**. 
 
 # Learning Rate
 
-A small **learning rate** (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the **learning rate** proportional to the slope. We do this until the slope is 0.
+A small **$$learning rate$$** (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the **$$learning rate$$** proportional to the slope. We do this until the slope is 0.
 
 
 In this simple function, this will get us to the global minimum, but in a more complex function we might end up in a local minimum, which is a much harder problem to solve.
@@ -50,7 +50,7 @@ In this simple function, this will get us to the global minimum, but in a more c
 
 What if the function has more inputs, for example **$$x$$** and **$$y$$**, and **$$z$$** as the output?
 
-To calculate the step direction in this case we need to use a **gradient**. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the **steepest descent**. This optimization algorithm is called > gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
+To calculate the step direction in this case we need to use a **gradient**. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the **steepest descent**. This optimization algorithm is called **gradient descent**. Moreover, the length of this direction vector is proportional to the steepness at that point.
 
 # Gradient Descent
 
