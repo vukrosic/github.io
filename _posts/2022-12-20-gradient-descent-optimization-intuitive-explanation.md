@@ -83,7 +83,7 @@ With this gradient you can calculate the next weight
 
 This is the gradient of the function $$f$$ at the coordinates $$x$$ and $$y$$. The process is the same for any number of dimensions.
 
-Hopefully, this helped you understand the math behind the gradient descent. 
+Hopefully, this helped you get a better understanding of the math behind the gradient descent. 
 
 Vuk Rosić,
 vukrosic1@gmail.com
