@@ -9,9 +9,7 @@ In this image you can see the functions of our model's predicted outputs and the
 $$f(x)_{predicted}$$ are the outputs of our model given $$x$$ as input data.
 $$f(x)_{correct}$$ are the correct outputs given $$x$$ as input data.
 
-**## Linear Functions**
-##** Linear Functions**
-## Linear Functions
+# Linear Functions
 
 To make things simple, let’s make these two functions linear.
 
@@ -32,12 +30,18 @@ Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ a
 
 To measure the difference between $$f(x)_{predicted}$$ and $$f(x)_{correct}$$, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (_MAE_).
 
+# Mean Absolute Error
+
 For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
 
 ![4 calculating W.jpg](https://raw.githubusercontent.com/vukrosic/vukrosic.github.io/master/BlogImages/Gradient%20Descent/5%20Difference.jpg)
 
 
-To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called **learning rate**. A small learning rate (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the learning rate proportional to the slope. We do this until the slope is 0.
+To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called **learning rate**. 
+
+# Learning Rate
+
+A small learning rate (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the learning rate proportional to the slope. We do this until the slope is 0.
 
 
 In this simple function, this will get us to the global minimum, but in a more complex function we might end up in a local minimum, which is a much harder problem to solve.
