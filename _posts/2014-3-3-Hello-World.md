@@ -24,9 +24,23 @@ For this we will need 2 functions.
 ![2 functions]({{site.baseurl}}/_posts/1 Two functions.jpg)
 
 
+Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and corrent output $$y$$.
+
+![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
+
+(something like this)
+
+As we can see, lower the $$y_{diff}$$ means the difference between f(x)_{predicted} and f(x)_{correct} is smaller, that is we get a better approximation. Now there are other problems if they match too closely, but that is beyond this beginner tutorial.
+
+
+
+
 Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for x data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$.
 
-Let's say we calculated many outpus so they form the $$y$$ functin.
+
+$$
+
+To calculate how to move the next $$f(x)$$ point towards the next $$y$$ point we need calculate the closest distance, or the direction vector from $$f(x)$$ to $$y$$.
 
 Partial derivative of $$f(x,y)$$ means we compute the derivative of $$f(x)$$ while pretending that $$y$$ is a constant.
 
