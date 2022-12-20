@@ -19,12 +19,12 @@ There are many optimizational algorithms in machine learning, some of which are:
 1. Gradient descent updates weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller. It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
 Partial derivative of f(x,y) means we compute the derivative of f(x) while pretending that y is a constant.
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+When $$a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$$
 
 $$f(x,y) = x^2sin(y)$$
 
-This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+This sentence uses `$` delimiters to show math inline:  $$\sqrt{3x-1}+(1+x)^2$$
 
 First we take the partial derivative with respect to x (so we treat y as a constant):
 
