@@ -13,7 +13,7 @@ $$f(x)_{correct}$$ are the correct outputs given $$x$$ as input data.
 
 To make things simple, let’s make these two functions linear.
 
-![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
+![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/3%20Linear%20functions.jpg?raw=true)
 
 
 Both of the have the formula:
@@ -33,7 +33,7 @@ To measure the difference between **$$f(x)_{predicted}$$** and $$**f(x)_{correct
 
 For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
 
-![4 calculating W.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE.jpg?raw=true)
+![5 calculating Weight.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
 
 
 To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called **learning rate**. 
