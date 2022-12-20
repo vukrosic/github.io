@@ -11,9 +11,8 @@ There are many optimizational algorithms in machine learning, some of which are:
 1. Gradient descent updates weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller. It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
 Partial derivative of f(x,y) means we compute the derivative of f(x) while pretending that y is a constant.
 
-$f(x,y)$
-$w = w - alpha * gradient(L, w)$
-w = w - alpha * gradient(L, w)
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 
 
