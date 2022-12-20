@@ -37,17 +37,9 @@ $$\pdv{f}{y} = x^2cos(y)$$
 $$\frac{df}{dx} = 2x\sin(y)$$
 
 
-\begin{document}
-$$\nabla \, , \nabla F$$
-\end{document}
-
-\begin{document}
-$$
-\nabla g(x, y, z) =\frac{\partial g}{\partial x}\hat{i} +
-                          \frac{\partial g}{\partial y}\hat{j} +
-                                    \frac{\partial g}{\partial k}\hat{z}
-$$
-\end{document}
+\nabla g(x, y, z)
+$\nabla g(x, y, z)$
+$$\nabla g(x, y, z)$$
 
 1. Stochastic gradient descent (SGD): SGD is a variant of gradient descent that computes the gradients using a single sample (or a small batch of samples) at a time. It is often used in large-scale machine learning problems because it can be implemented more efficiently than batch gradient descent, which computes the gradients using the entire dataset.
 
