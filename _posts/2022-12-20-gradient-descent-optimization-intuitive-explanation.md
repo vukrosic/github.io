@@ -56,21 +56,20 @@ To calculate the step direction in this case we need to use a gradient. A gradie
 Now we will calculate the gradient:
 Let’s say we have a 3-dimensional space where the $$z$$ coordinate of the point is given as a function of $$x$$ and $$y$$ coordinates.
 
-$$z = f(x,y) = x^2*sin(y)$$
+$$z = f(x,y) = x^2\sin(y)$$
 
 To calculate the gradient at this point, we need to find two partial derivatives.
 First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that $$y$$ is constant.
 
-$$\frac{\partial f}{\partial x} = 2xsin(y)$$
+$$\frac{\partial f}{\partial x} = 2x\sin(y)$$
 
 then the partial derivative of $$f$$ with respect to $$y$$
 
-$$\frac{\partial f}{\partial x} = x^2cos(y)$$
-
-the gradient of $$f(x,y)$$ is simply a vector of these 2 values
+$$\frac{\partial f}{\partial x} = x^2\cos(y)$$ 
 
 
-The final formula:
+**The gradient** of $$f(x,y)$$ is simply a vector of these 2 values: 
+
 
 $$\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y}
 \end{bmatrix} = \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}$$
