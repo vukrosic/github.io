@@ -30,7 +30,9 @@ To measure the difference between **$$f(x)_{predicted}$$**  and  **$$f(x)_{corre
 
 # Mean Absolute Error
 
-For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
+For the next graph, we will choose a constant input and output value, and we will only change the weight of the model. We can see how the **MAE** is changing depending on the $$weight$$.
+
+For a certain value of the $$weight$$ **MAE** is 0, meaning that at that point our model correctly predicts the output.
 
 ![5 calculating Weight.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/6%20MAE2.jpg?raw=true)
 
