@@ -26,7 +26,7 @@ Now let's plot the differences between those 2 function on another graph - x rep
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
-To minimize the difference (loss) between f(x)_{predicted} and f(x)_{correct}, we need to minimize the difference (loss) function.
+To minimize the difference (loss) between $$f(x)_{predicted} and f(x)_{correct}$$, we need to minimize the difference (loss) function.
 Now there are other problems if they match too closely, but that is beyond this beginner's tutorial.
 
 Gradient descent calculates how to update weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller.
@@ -44,12 +44,12 @@ In practice, this is extremely hard for big models, even on the training data, b
 Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for $$x$$ data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$. Keep in mind that it might be problematic if they are too similar, but that is beyond this beginner's tutorial.
 
 
-Next, we need to calculate how to minimize the difference (loss) function, which will bring previous f(x)_{predicted} and f(x)_{correct} closer together.
+Next, we need to calculate how to minimize the difference (loss) function, which will bring previous $$f(x)_{predicted} and f(x)_{correct}$$ closer together.
 
 To do this we will simply calculate in which direction
 The question I has was ""
 
-We could optimize it at one points to the value of 0, but the optimization may not keep it at 0, as this function can start going up again as the difference between f(x)_{predicted} and f(x)_{correct} starts increasing.
+We could optimize it at one points to the value of 0, but the optimization may not keep it at 0, as this function can start going up again as the difference between $$f(x)_{predicted} and f(x)_{correct}$$ starts increasing.
 
 
 
