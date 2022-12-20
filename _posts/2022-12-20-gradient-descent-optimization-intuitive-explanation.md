@@ -26,7 +26,7 @@ During the training, we know the values of $$x$$, the input data, and $$f(x)$$, 
 
 Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use a big computer to guess as many weight and bias values as possible and find the ones that match the correct values as best as possible.
 
-To measure the difference between **$$f(x)_{predicted}$$**  and  **$$f(x)_{correct}$$** , we will just **subtract** them and get the **absolute value**. This is a loss function called Mean Absolute Error (_MAE_).
+To measure the difference between **$$f(x)_{predicted}$$**  and  **$$f(x)_{correct}$$** , we will just **subtract** them and get the **absolute value**. This is a loss function called Mean **Absolute Error (_MAE_)**.
 
 # Mean Absolute Error
 
