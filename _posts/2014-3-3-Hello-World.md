@@ -13,7 +13,7 @@ published: true
 
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
 
-# An Intuitive Understanding Of Loss Function & Optimization Algorithms, Because I Couldn't Find One
+# Loss Function & Optimization Algorithms - The Intuitive Explanation
 
 
 First, let's plot functions of our model's predicted outputs and the corrent outputs.
@@ -24,11 +24,11 @@ Here is can see 2 functions:
 $$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs we are trying to get given the input data.
 Both of the have the format $$f(x)=weight*x+bias$$.
 
-During the training, we know the values of $$x$$ - input data, and $$f(x)$$, the output, and we need to calculate $$weight$$ and $$bias$$. Then we will use $$weight*x + bias$$ to calculate $$f(x)$$ - output from inputs we don't know.
+During the training, we know the values of $$x$$, the input data, and $$f(x)$$, the output, and we need to calculate $$weight$$ and $$bias$$. Then we will use $$weight*x + bias$$ to calculate $$f(x)$$ - output from inputs we don't know.
 
-Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use big computers to guess a lot of $$weight$$ and $$bias$$ values and find the best one.
+Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use big computers to guess as much $$weight$$ and $$bias$$ values as possible and find ones that match the correct funtion as best as possible.
 
-Now let's see how we would measure which $$weight$$ is the best.
+Let's see how we would measure which $$weight$$ is the best.
 
 First, how do we know if the values are best. Simple - we don't.
 
