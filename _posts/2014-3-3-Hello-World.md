@@ -17,19 +17,19 @@ published: true
 
 Gradient descent updates weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller. 
 
-It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
 
 For this we will need 2 functions.
+
+First, let's plot functions of our model's predicted outputs and the corrent outputs.
 
 ![2 funcs]({{site.baseurl}}/_posts/1 Two functions2.jpg)
 
 
 
-Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and corrent output $$y$$.
+Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and the correct output $$y$$.
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
-(something like this)
 
 As we can see, lower the $$y_{diff}$$ means the difference between f(x)_{predicted} and f(x)_{correct} is smaller, that is we get a better approximation. Now there are other problems if they match too closely, but that is beyond this beginner tutorial.
 
