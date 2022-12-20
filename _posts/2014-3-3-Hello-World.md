@@ -13,7 +13,7 @@ published: true
 
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
 
-# Intuitive Understand Of Gradient Descent As Optimization Algorithm
+# AN Intuitive Understand Of Gradient Descent As Optimization Algorithm, because I couldn't find one
 
 
 First, let's plot functions of our model's predicted outputs and the corrent outputs.
@@ -26,11 +26,16 @@ Now let's plot the differences between those 2 function on another graph - x rep
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
-Khm...**### THIS IS NOT A LOSS FUNCTION, THIS IS JUST TRAINING LOSS!!!**
-This was extremely confusing to me.
+This loss function is called **Mean Absolute Error (MAE)**
+We need to minimize this.
+To minimize this we need to find the direction of the slope
 
+Loss function is a function of weights and biases. We can not solve x, but we need to guess
+We have only one equation, but 2 or more variables (weights and bises), so we can not just calculate the minimum loss towards down, we need to essentially guess what weights and biasses will bring the loss function down.
 
+Next we try a lot of different weights and we find the one that moves the function down the most, that is the one with the steepest slope, that is derivative.
 
+--------
 To minimize the difference (loss) between $$f(x)_{predicted} and f(x)_{correct}$$, we need to minimize the difference (loss) function.
 Now there are other problems if they match too closely, but that is beyond this beginner's tutorial.
 
