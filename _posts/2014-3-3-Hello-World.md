@@ -32,9 +32,7 @@ First we take the partial derivative of $$f$$ with respect to $$x$$ (so we treat
 $$\frac{\partial f}{\partial x} = 2xsin(y)$$
 
 then we take a partial derivative of $$f$$ with respect to $$y$$
-\frac{\partial f}{\partial y} = \begin{bmatrix} x^2\cos(y) \\\over 2x\sin(y) \end{bmatrix}
-\frac{\partial f}{\partial y} = \begin{bmatrix} x^2\cos(y) \ 2x\sin(y) \end{bmatrix}
-\frac{\partial f}{\partial y} = \begin{bmatrix} x^2\cos(y) \\\ 2x\sin(y) \end{bmatrix}
+\frac{\partial f}{\partial y} = \begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end{bmatrix}
 
 
 
