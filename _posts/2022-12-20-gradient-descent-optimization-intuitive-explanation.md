@@ -50,7 +50,7 @@ In this simple function, this will get us to the global minimum, but in a more c
 
 What if the function has more inputs, for example **$$x$$** and **$$y$$**, and **$$z$$** as the output?
 
-To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the **steepest descent**. This optimization algorithm is called **gradient descent**. Moreover, the length of this direction vector is proportional to the steepness at that point.
+To calculate the step direction in this case we need to use a **gradient**. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the **steepest descent**. This optimization algorithm is called > gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
 
 # Gradient Descent
 
