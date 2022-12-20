@@ -56,7 +56,8 @@ the gradient of $$f(x,y)$$ is simply a vector of these 2 values
 
 The final formula:
 
-\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y} \end{bmatrix}= \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}
+$$\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y}
+\end{bmatrix} = \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}$$
 
 This is the gradient of the function $$f$$ at the coordinates $$x$$ and $$y$$. The process is the same for any number of dimensions.
 
