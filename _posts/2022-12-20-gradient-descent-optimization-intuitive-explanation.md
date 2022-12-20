@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Gradient Descent Optimization - An Intuitive Explanation11
 
