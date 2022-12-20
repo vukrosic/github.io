@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I learn one complex ML topic every day
+title: Gradient Descent Optimization - An Intuitive Explanation
 published: true
 ---
 <!-- MathJax -->
@@ -13,50 +13,94 @@ published: true
 
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
 
-# Loss Function & Optimization Algorithms - The Intuitive Explanation
+# Gradient Descent Optimization - An Intuitive Explanation
 
 
-First, let's plot functions of our model's predicted outputs and the corrent outputs.
-
-![2 funcs]({{site.baseurl}}/_posts/1 Two functions2.jpg)
-
-Here is can see 2 functions:
-$$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs we are trying to get given the input data.
-Both of the have the format $$f(x)=weight*x+bias$$.
-
-During the training, we know the values of $$x$$, the input data, and $$f(x)$$, the output, and we need to calculate $$weight$$ and $$bias$$. Then we will use $$weight*x + bias$$ to calculate $$f(x)$$ - output from inputs we don't know.
-
-Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use big computers to guess as much $$weight$$ and $$bias$$ values as possible and find ones that match the correct funtion as best as possible.
-
-Let's see how we would measure which $$weight$$ is the best.
-
-First, how do we know if the values are best. Simple - we don't.
+Gradient Descent - An Intuitive Explanation
 
 
 
-That's why we can not just 'calculate' the w and b values, but we need to guess them. We will use big computer to guess as much of them as possible, and find the ones that match the correct w and b as closely as possible.
-
-Remember - we are looking for only one value of the $$weight$$ variable, the one that will make the loss function smallest, that is, make the $$f(x)_{correct}$$ and $$f(x)_{predicted}$$ closest.
+In this image you can see the functions of our model's predicted outputs and the correct outputs.
 
 
-Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and the correct output $$y$$.
+
+f(x)_predicted are the outputs of our model given x as input data. f(x)_correct are the correct outputs given x as input data.
+
+
+
+
+
+
+To make things simple. Let’s make these two functions linear.
+
+
+
+Both of the have the format f(x)=weight*x+bias.
+
+
+During the training, we know the values of x, the input data, and f(x), the output, and we need to find weight and bias (slope and offset) to overlap these 2 functions.
+
+Now you might spot the problem - we have 1 equation and 2 unknowns, weight and bias. In this situation, we need to use big computers to guess as many weight and bias values as possible and find the ones that match the correct function as best as possible.
+
+To measure the difference between f(x)_predicted and f(x)_correct, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (MAE).
+
+For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
+
+To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called learning rate. A small learning rate (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the learning rate proportional to the slope. We do this until the slope is 0.
+
+
+In this simple function, this will get us to the global minimum, but in a more complex function we might end up in a local minimum, which is a much harder problem to solve.
+
+What if the function has more inputs, for example x and y, and z as an output? To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the steepest descent. This optimization algorithm is called gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
+
+Now we will calculate the gradient:
+Let’s say we have a 3-dimensional space where the z coordinate of the point is given as a function of x and y coordinates.
+
+z = f(x,y) = x^2*sin(y)
+
+To calculate the gradient at this point, we need to find two partial derivatives.
+First the partial derivative of f with respect to x. This only means that we find the derivative of this function while pretending that y is constant.
+
+$$\frac{\partial f}{\partial x} = 2xsin(y)$$
+
+then the partial derivative of f with respect to y
+
+$$\frac{\partial f}{\partial x} = x^2cos(y)$$
+
+the gradient of f(x,y) is simply a vector of these 2 values
+
+
+The final formula:
+
+\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y} \end{bmatrix}= \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}
+
+This is the gradient of the function f at the coordinates x and y. The process is the same for any number of dimensions.
+
+Hopefully, this helped you understand the math behind the gradient descent. 
+
+Vuk Rosić,
+vukrosic1@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gradient is a function that takes in a point in a two-dimentional space and outputs an output.
+
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
-This loss function is called **Mean Absolute Error (MAE)**
-We need to minimize this.
-To minimize this we need to find the direction of the slope
-
-Loss function is a function of weights and biases. We can not solve x, but we need to guess
-We have only one equation, but 2 or more variables (weights and bises), so we can not just calculate the minimum loss towards down, we need to essentially guess what weights and biasses will bring the loss function down.
-
-Next we try a lot of different weights and we find the one that moves the function down the most, that is the one with the steepest slope, that is derivative.
-
---------
-To minimize the difference (loss) between $$f(x)_{predicted} and f(x)_{correct}$$, we need to minimize the difference (loss) function.
-Now there are other problems if they match too closely, but that is beyond this beginner's tutorial.
-
-Gradient descent calculates how to update weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller.
 
 The first question I had was "Why don't we just optimize parameters so the less functoin goes straight down to 0? Why are we slowly decreasing it?"
 
@@ -111,51 +155,3 @@ $$\nabla f = \frac{\partial f}{\partial x} = \begin{bmatrix} x^2\cos(y) \\ 2x\si
 
 
 2. Mini-batch gradient descent: Mini-batch gradient descent is a variant of gradient descent that computes the gradients using a small batch of samples at a time. It is a trade-off between SGD and batch gradient descent, offering a balance between the efficiency of SGD and the stability of batch gradient descent.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Neural Network From Scratch Using NumPy
-
-In this post, we will learn about the math behind machine learning and use Python to build a small library for creating neural networks with various layers (such as fully connected and convolutional layers).
-
-In this post, we will dive into the math behind neural networks and gain an intuitive understanding of why certain techniques are used.
-
-To make our feed forward network in NumPy, we will do it in the next steps:
-
-1. Input data is fed into the neural network.
-
-2. It flows layer to layer, undergoing transformations at each layer.
-
-3. We compare the output with the correct value from the training data, and we calculate the error as a **scalar**.
-
-4. A parameter (such as a weight or bias) is adjusted by subtracting the derivative of the error with respect to the parameter. This helps to improve the accuracy of the network by modifying the transformations applied by the layers.
-
-5. The process is repeated, with the updated parameters being used to generate new predictions or decisions. This continues until the network's performance meets the desired level of accuracy.
