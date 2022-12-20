@@ -21,8 +21,20 @@ First, let's plot functions of our model's predicted outputs and the corrent out
 ![2 funcs]({{site.baseurl}}/_posts/1 Two functions2.jpg)
 
 Here is can see 2 functions:
-$$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs gives the input data.
-Both of the have the format $$f(x)=w*x+b$$; where w is weight and b is bias. But we actually know the values of x - input data, and we need to calculate w and b, which are unknowns here. Now you might spot a problem - we have 1 equation and 2 unknowns. That's why we can not just 'calculate' the w and b values, but we need to guess them. We will use big computer to guess as much of them as possible, and find the ones that match the correct w and b as closely as possible.
+$$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs we are trying to get given the input data.
+Both of the have the format $$f(x)=weight*x+bias$$.
+
+During the training, we know the values of $$x$$ - input data, and $$f(x)$$, the output, and we need to calculate $$weight$$ and $$bias$$. Then we will use $$weight*x + bias$$ to calculate $$f(x)$$ - output from inputs we don't know.
+
+Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$bias$$. In this situation, we need to use big computers to guess a lot of $$weight$$ and $$bias$$ values and find the best one.
+
+Now let's see how we would measure which $$weight$$ is the best.
+
+First, how do we know if the values are best. Simple - we don't.
+
+
+
+That's why we can not just 'calculate' the w and b values, but we need to guess them. We will use big computer to guess as much of them as possible, and find the ones that match the correct w and b as closely as possible.
 
 Remember - we are looking for only one value of the $$weight$$ variable, the one that will make the loss function smallest, that is, make the $$f(x)_{correct}$$ and $$f(x)_{predicted}$$ closest.
 
