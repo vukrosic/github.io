@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: I learn one complex ML topic every day
 published: true
 ---
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
