@@ -54,13 +54,14 @@ To calculate the step direction in this case we need to use a **gradient**. A gr
 
 # Gradient Descent
 
-Now we will calculate the gradient:
 Let’s say we have a 3-dimensional space where the $$z$$ coordinate of the point is given as a function of $$x$$ and $$y$$ coordinates.
 
 $$z = f(x,y) = x^2\sin(y)$$
 
-To calculate the gradient at this point, we need to find two partial derivatives.
-First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that $$y$$ is constant.
+To calculate the gradient at this point, we need to find two **partial derivatives**.
+
+
+First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that $$y$$ is a constant.
 
 $$\frac{\partial f}{\partial x} = 2x\sin(y)$$
 
@@ -75,7 +76,7 @@ The **gradient** of $$f(x,y)$$ is simply a vector of these 2 values:
 $$\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y}
 \end{bmatrix} = \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}$$
 
-Then simply calculate the next weight:
+With this gradient you can calculate the next weight
 
 ### $$weight = weight - learning_rate * gradient$$ 
 
