@@ -13,7 +13,7 @@ published: true
 
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
 
-# AN Intuitive Understand Of Gradient Descent As Optimization Algorithm, because I couldn't find one
+# An Intuitive Understanding Of Loss Function & Optimization Algorithms, Because I Couldn't Find One
 
 
 First, let's plot functions of our model's predicted outputs and the corrent outputs.
