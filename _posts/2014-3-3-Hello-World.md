@@ -36,10 +36,22 @@ As we can see, lower the $$y_{diff}$$ means the difference between f(x)_{predict
 
 
 
-Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for x data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$.
+Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for $$x$$ data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$. Keep in mind that it might be problematic if they are too similar, but that is beyond this beginner's tutorial.
 
 
-$$
+Next, we need to calculate how to minimize the difference (loss) function, which will bring previous f(x)_{predicted} and f(x)_{correct} closer together.
+
+To do this we will simply calculate in which direction
+The question I has was "Why don't you just optimize parameters so the less functoin goes straight down?, Why are we slowly decreasing it?"
+
+We could optimize it at one points to the value of 0, but the optimization may not keep it at 0, as this function can start going up again as the difference between f(x)_{predicted} and f(x)_{correct} starts increasing.
+
+
+
+This is because the loss function is already an existing function and if at one point we put it as 0, the next point it can start growing. We are trying to minimize it so no matter how randomly it starts going up and down, we need to fine tune the parameters so it always stays close.
+
+
+The answer is simple, we don't know exactly how much down we should go, and we shouldn't overshoot to below zero. We can control how much down we go with **learning rate**.
 
 To calculate how to move the next $$f(x)$$ point towards the next $$y$$ point we need calculate the closest distance, or the direction vector from $$f(x)$$ to $$y$$.
 
