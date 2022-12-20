@@ -15,10 +15,6 @@ published: true
 
 # Intuitive Understand Of Gradient Descent As Optimization Algorithm
 
-Gradient descent updates weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller. 
-
-
-For this we will need 2 functions.
 
 First, let's plot functions of our model's predicted outputs and the corrent outputs.
 
@@ -30,8 +26,17 @@ Now let's plot the differences between those 2 function on another graph - x rep
 
 ![gradient descent]({{site.baseurl}}/_posts/2 gradient descent.jpg)
 
+To minimize the difference (loss) between f(x)_{predicted} and f(x)_{correct}, we need to minimize the difference (loss) function.
+Now there are other problems if they match too closely, but that is beyond this beginner's tutorial.
 
-As we can see, lower the $$y_{diff}$$ means the difference between f(x)_{predicted} and f(x)_{correct} is smaller, that is we get a better approximation. Now there are other problems if they match too closely, but that is beyond this beginner tutorial.
+Gradient descent calculates how to update weights and biases so that the difference (loss) between the calculated output and the correct output gets smaller.
+
+The first question I had was "Why don't we just optimize parameters so the less functoin goes straight down to 0? Why are we slowly decreasing it?"
+
+
+In theory, it is possible for the loss to be zero, but this would occur only if the predicted outputs of the model are exactly equal to the true outputs for every input in the dataset.
+
+In practice, this is extremely hard for big models, even on the training data, because there will always be some level of noise in the data, or incomplete or inaccurate information. However, it is possible to train a model to have a very low loss. The ultimate goal of training a model is to find the set of parameters that produces the lowest possible loss, which will likely result in a model that performs well on unseen data.
 
 
 
@@ -42,9 +47,11 @@ Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and func
 Next, we need to calculate how to minimize the difference (loss) function, which will bring previous f(x)_{predicted} and f(x)_{correct} closer together.
 
 To do this we will simply calculate in which direction
-The question I has was "Why don't you just optimize parameters so the less functoin goes straight down?, Why are we slowly decreasing it?"
+The question I has was ""
 
 We could optimize it at one points to the value of 0, but the optimization may not keep it at 0, as this function can start going up again as the difference between f(x)_{predicted} and f(x)_{correct} starts increasing.
+
+
 
 
 
