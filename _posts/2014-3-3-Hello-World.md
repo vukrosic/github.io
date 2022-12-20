@@ -26,21 +26,19 @@ $$f(x,y) = x^2sin(y)$$
 
 This sentence uses `$` delimiters to show math inline:  $$\sqrt{3x-1}+(1+x)^2$$
 
-First we take the partial derivative with respect to x (so we treat y as a constant):
+First we take the partial derivative of $$f$$ with respect to $$x$$ (so we treat y as a constant):
 
-$$\pdv{f}{x} = 2xsin(y)$$
+$$\frac{\partial f}{\partial x} = 2xsin(y)$$
 
 then we take a partial derivative of $$f$$ with respect to $$y$$
 
-$$\pdv{f}{y} = x^2cos(y)$$
-$$\frac{df}{dx} = 2x\sin(y)$$
+$$\frac{\partial f}{\partial y} = x^2cos(y)$$
+![Screenshot_aaaaa1.jpg]({{site.baseurl}}/_posts/Screenshot_aaaaa1.jpg)
 
 
 $$\nabla g(x, y, z)$$
 -------------------------
-$$\frac{\partial Q}{\partial t} = \frac{\partial s}{\partial t}$$
-$$\dv[n]{Q}{t} = \dv[n]{s}{t}  \quad$$
-$$\pdv[n]{Q}{t} = \pdv[n]{s}{t}  \quad$$
+
 
 1. Stochastic gradient descent (SGD): SGD is a variant of gradient descent that computes the gradients using a single sample (or a small batch of samples) at a time. It is often used in large-scale machine learning problems because it can be implemented more efficiently than batch gradient descent, which computes the gradients using the entire dataset.
 
