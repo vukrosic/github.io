@@ -47,15 +47,19 @@ In this simple function, this will get us to the global minimum, but in a more c
 
 # More Dimensions
 
-What if the function has more inputs, for example x and y, and z as an output? To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the steepest descent. This optimization algorithm is called gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
+What if the function has more inputs, for example x and y, and z as an output?
+
+To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the **steepest descent**. This optimization algorithm is called **gradient descent**. Moreover, the length of this direction vector is proportional to the steepness at that point.
+
+# Gradient Descent
 
 Now we will calculate the gradient:
-Let’s say we have a 3-dimensional space where the z coordinate of the point is given as a function of $$x$$ and $$y$$ coordinates.
+Let’s say we have a 3-dimensional space where the $$z$$ coordinate of the point is given as a function of $$x$$ and $$y$$ coordinates.
 
 $$z = f(x,y) = x^2*sin(y)$$
 
 To calculate the gradient at this point, we need to find two partial derivatives.
-First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that y is constant.
+First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that $$y$$ is constant.
 
 $$\frac{\partial f}{\partial x} = 2xsin(y)$$
 
