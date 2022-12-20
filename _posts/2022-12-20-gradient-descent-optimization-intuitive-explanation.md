@@ -74,6 +74,10 @@ $$\frac{\partial f}{\partial x} = x^2\cos(y)$$
 $$\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y}
 \end{bmatrix} = \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}$$
 
+Then simply calculate the next weight:
+
+### $$weight = weight - learning_rate * gradient$$
+
 This is the gradient of the function $$f$$ at the coordinates $$x$$ and $$y$$. The process is the same for any number of dimensions.
 
 Hopefully, this helped you understand the math behind the gradient descent. 
