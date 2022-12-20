@@ -16,6 +16,8 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 $$f(x,y) = x^2sin(y)$$
 
+This sentence uses `$` delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
 First we take the partial derivative with respect to x (so we treat y as a constant):
 
 
