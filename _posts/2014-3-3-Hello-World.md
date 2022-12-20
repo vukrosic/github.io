@@ -14,6 +14,11 @@ Partial derivative of f(x,y) means we compute the derivative of f(x) while prete
 When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
+$$f(x,y) = x^2sin(y)$$
+
+First we take the partial derivative with respect to x (so we treat y as a constant):
+
+
 
 
 1. Stochastic gradient descent (SGD): SGD is a variant of gradient descent that computes the gradients using a single sample (or a small batch of samples) at a time. It is often used in large-scale machine learning problems because it can be implemented more efficiently than batch gradient descent, which computes the gradients using the entire dataset.
