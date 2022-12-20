@@ -24,6 +24,8 @@ Here is can see 2 functions:
 $$f(x)_{predicted}$$ are the outputs of our model gives X as input data. $$f(x)_{correct}$$ are the correct outputs gives the input data.
 Both of the have the format $$f(x)=w*x+b$$; where w is weight and b is bias. But we actually know the values of x - input data, and we need to calculate w and b, which are unknowns here. Now you might spot a problem - we have 1 equation and 2 unknowns. That's why we can not just 'calculate' the w and b values, but we need to guess them. We will use big computer to guess as much of them as possible, and find the ones that match the correct w and b as closely as possible.
 
+Remember - we are looking for only one value of the $$weight$$ variable, the one that will make the loss function smallest, that is, make the $$f(x)_{correct}$$ and $$f(x)_{predicted}$$ closest.
+
 
 Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and the correct output $$y$$.
 
