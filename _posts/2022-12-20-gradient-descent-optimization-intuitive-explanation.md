@@ -16,13 +16,12 @@ To make things simple, let’s make these two functions linear.
 ![3 Linear functions.jpg](https://github.com/vukrosic/vukrosic.github.io/blob/master/BlogImages/Gradient%20Descent/3%20Linear%20functions.jpg?raw=true)
 
 
-Both of the have the format
-
-							## $$f(x)=weight*x+bias$$
+Both of the have the formula:
 
 
 ## $$f(x)=weight*x+bias$$.
 
+Just $$weight$$ and $$bias$$ are different
 
 During the training, we know the values of $$x$$, the input data, and $$f(x)$$, the output, and we need to find $$weight$$ and $$bias$$ (slope and offset) to overlap these 2 functions.
 
