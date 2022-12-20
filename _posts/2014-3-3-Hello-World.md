@@ -19,9 +19,14 @@ Gradient descent updates weights and biases so that the difference (loss) betwee
 
 It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
 
-For this we will need 2 functions. Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for x data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$.
+For this we will need 2 functions.
 
-Let's say we calculated many points
+![2 functions]({{site.baseurl}}/_posts/1 Two functions.jpg)
+
+
+Function $$y$$ will represent correct outputs for $$x$$ data as inputs, and function $$f(x)$$ will be the network's predicted outputs for x data as input. We are trying to get function $$f(x)$$ to (as closely as possible) overlap the function $$y$$.
+
+Let's say we calculated many outpus so they form the $$y$$ functin.
 
 Partial derivative of $$f(x,y)$$ means we compute the derivative of $$f(x)$$ while pretending that $$y$$ is a constant.
 
