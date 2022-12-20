@@ -21,13 +21,13 @@ Both of the have the formula:
 
 ## $$f(x)=weight*x+bias$$.
 
-Just $$weight$$ and $$bias$$ are different
+Just $$weight$$ and $$bias$$ values are different.
 
 During the training, we know the values of $$x$$, the input data, and $$f(x)$$, the output, and we need to find $$weight$$ and $$bias$$ (slope and offset) to overlap these 2 functions.
 
 Now you might spot the problem - we have 1 equation and 2 unknowns, $$weight$$ and $$ias$$. In this situation, we need to use big computers to guess as many weight and bias values as possible and find the ones that match the correct function as best as possible.
 
-To measure the difference between $$f(x)_{predicted}$$ and $$f(x)_{correct}$$, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (_MAE_).
+To measure the difference between **$$f(x)_{predicted}$$** and $$**f(x)_{correct}**$$, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (_MAE_).
 
 # Mean Absolute Error
 
