@@ -37,7 +37,7 @@ $$\frac{\partial f}{\partial y} = $$\begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end
 
 
 
-$$\nabla f = 2xsiny, x^2cosy$$
+$$\nabla f = \begin{bmatrix} x^2\cos(y) \\ 2x\sin(y) \end{bmatrix}$$
 -------------------------
 
 
