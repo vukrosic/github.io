@@ -16,26 +16,22 @@ published: true
 # Gradient Descent Optimization - An Intuitive Explanation
 
 
-Gradient Descent - An Intuitive Explanation
-
-
 
 In this image you can see the functions of our model's predicted outputs and the correct outputs.
 
+![1 Two functions22.jpg]({{site.baseurl}}/_posts/1 Two functions22.jpg)
 
 
 f(x)_predicted are the outputs of our model given x as input data. f(x)_correct are the correct outputs given x as input data.
 
 
-
-
-
-
 To make things simple. Let’s make these two functions linear.
 
+![2 gradient descentwe.jpg]({{site.baseurl}}/_posts/2 gradient descentwe.jpg)
+![3 Linear functions.jpg]({{site.baseurl}}/_posts/3 Linear functions.jpg)
 
 
-Both of the have the format f(x)=weight*x+bias.
+Both of the have the format $$f(x)=weight*x+bias$$.
 
 
 During the training, we know the values of x, the input data, and f(x), the output, and we need to find weight and bias (slope and offset) to overlap these 2 functions.
@@ -45,6 +41,9 @@ Now you might spot the problem - we have 1 equation and 2 unknowns, weight and b
 To measure the difference between f(x)_predicted and f(x)_correct, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (MAE).
 
 For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
+
+![4 calculating W.jpg]({{site.baseurl}}/_posts/4 calculating W.jpg)
+
 
 To find this weight value, we will start at a random point on the function and calculate the derivative (slope). Then we will shift to the left or right, in the direction of the slope’s decrease. We will step in that direction for a certain distance and measure again. This distance is called learning rate. A small learning rate (step) will take too long to find the minimum, but a large one can overshoot the minimum. To combat this, we can make the learning rate proportional to the slope. We do this until the slope is 0.
 
