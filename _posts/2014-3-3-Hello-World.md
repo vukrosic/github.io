@@ -21,7 +21,8 @@ It first calculates the derivative (slope) at the current output value from the 
 
 For this we will need 2 functions.
 
-![2 functions]({{site.baseurl}}/_posts/1 Two functions.jpg)
+![2 funcs]({{site.baseurl}}/_posts/1 Two functions2.jpg)
+
 
 
 Now let's plot the differences between those 2 function on another graph - x represent the same input values, but y axis is the (absolute) difference between calculated output $$f(x)$$ and corrent output $$y$$.
