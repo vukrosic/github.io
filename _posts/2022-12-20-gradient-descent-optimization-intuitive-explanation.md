@@ -76,7 +76,9 @@ $$\nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\parti
 
 Then simply calculate the next weight:
 
-### $$weight = weight - learning_rate * gradient$$
+### $$weight = weight - learning_rate * gradient$$ 
+
+### weight = weight - learning_rate * gradient
 
 This is the gradient of the function $$f$$ at the coordinates $$x$$ and $$y$$. The process is the same for any number of dimensions.
 
