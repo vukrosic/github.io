@@ -36,7 +36,7 @@ $$\frac{\partial f}{\partial y} = x^2cos(y)$$
 ![Screenshot_aaaaa1.jpg]({{site.baseurl}}/_posts/Screenshot_aaaaa1.jpg)
 
 
-$$\nabla g(x, y, z)$$
+$$\nabla f = 2xsiny, x^2cosy$$
 -------------------------
 
 
