@@ -1,18 +1,13 @@
 ---
 published: true
 ---
-# Gradient Descent Optimization - An Intuitive Explanation11
-
-
 In this image you can see the functions of our model's predicted outputs and the correct outputs.
 
 ![1 Two functions22.jpg](https://raw.githubusercontent.com/vukrosic/vukrosic.github.io/master/BlogImages/Gradient%20Descent/1%20Two%20functions22.jpg)
 
 
-$$f(x)_{predicted}$$ are the outputs of our model given $$x$$ as input data. 
-
-
-$f(x)_{correct}$ are the correct outputs given $$x$$ as input data.
+$$f(x)_{predicted}$$ are the outputs of our model given $$x$$ as input data.
+$$f(x)_{correct}$$ are the correct outputs given $$x$$ as input data.
 
 
 To make things simple. Let’s make these two functions linear.
