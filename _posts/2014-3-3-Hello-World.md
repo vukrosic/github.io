@@ -13,6 +13,7 @@ published: true
 
 > As I stood at the threshold of my new life, I couldn't help but feel a sense of longing for the carefree days of my youth. But I knew that my determination to see a world with a benign artificial intelligence, one that could coexist peacefully with humanity, required sacrifice. I was prepared to trade my youth and every waking hour to work towards this goal. It was a dream worth striving for, even if it meant sacrificing everything else.
 
+# Intuitive Understand Of Gradient Descent As Optimization Algorithm
 
 There are many optimizational algorithms in machine learning, some of which are:
 
@@ -20,9 +21,13 @@ Gradient descent updates weights and biases so that the difference (loss) betwee
 
 It first calculates the derivative (slope) at the current output value from the function that is drawn from all previous value, and updates parameters such that the next output value is in the direction of the slope decrease.
 
+For this we will have 2 functions. Function $$y$$ will represent correct outputs for $$x$$ as inputs, and function $$f(x)$$ will be the network's predicted outputs for x inputs. We are trying to get function $$f(x)$$ to (hopefully) overlap the function $$y$$.
+
+Let's say we calculated many points
+
 Partial derivative of $$f(x,y)$$ means we compute the derivative of $$f(x)$$ while pretending that $$y$$ is a constant.
 
-$$f(x,y) = x^2sin(y)$$
+
 
 First we take the partial derivative of $$f$$ with respect to $$x$$ (so we treat y as a constant):
 
