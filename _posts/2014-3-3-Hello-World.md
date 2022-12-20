@@ -22,7 +22,7 @@ In this image you can see the functions of our model's predicted outputs and the
 ![1 Two functions22.jpg]({{site.baseurl}}/_posts/1 Two functions22.jpg)
 
 
-f(x)_predicted are the outputs of our model given x as input data. f(x)_correct are the correct outputs given x as input data.
+$$f(x)_{predicted}$$ are the outputs of our model given x as input data. $$f(x)_{correct}$$ are the correct outputs given x as input data.
 
 
 To make things simple. Let’s make these two functions linear.
@@ -34,11 +34,11 @@ To make things simple. Let’s make these two functions linear.
 Both of the have the format $$f(x)=weight*x+bias$$.
 
 
-During the training, we know the values of x, the input data, and f(x), the output, and we need to find weight and bias (slope and offset) to overlap these 2 functions.
+During the training, we know the values of x, the input data, and $$f(x)$$, the output, and we need to find weight and bias (slope and offset) to overlap these 2 functions.
 
 Now you might spot the problem - we have 1 equation and 2 unknowns, weight and bias. In this situation, we need to use big computers to guess as many weight and bias values as possible and find the ones that match the correct function as best as possible.
 
-To measure the difference between f(x)_predicted and f(x)_correct, we will just subtract them and get the absolute value. This is a loss function called Mean Absolute Error (MAE).
+To measure the difference between $$f(x)_{predicted} and f(x)_{correct}$$, we will just subtract them and get the absolute value. This is a loss function called **Mean Absolute Error** (MAE).
 
 For the next graph, we will choose a random input and output value and keep them constant, and we will only change the weight of the model. We can see how the MAE is changing depending on the weight. For a certain value of the weight, MAE is 0, meaning that at that point our model correctly predicts the output.
 
@@ -53,27 +53,27 @@ In this simple function, this will get us to the global minimum, but in a more c
 What if the function has more inputs, for example x and y, and z as an output? To calculate the step direction in this case we need to use a gradient. A gradient of a function gives us the direction of the steepest ascent, and if we take the negative, we will get the steepest descent. This optimization algorithm is called gradient descent. Moreover, the length of this direction vector is proportional to the steepness at that point.
 
 Now we will calculate the gradient:
-Let’s say we have a 3-dimensional space where the z coordinate of the point is given as a function of x and y coordinates.
+Let’s say we have a 3-dimensional space where the z coordinate of the point is given as a function of $$x$$ and $$y$$ coordinates.
 
-z = f(x,y) = x^2*sin(y)
+$$z = f(x,y) = x^2*sin(y)$$
 
 To calculate the gradient at this point, we need to find two partial derivatives.
-First the partial derivative of f with respect to x. This only means that we find the derivative of this function while pretending that y is constant.
+First the partial derivative of $$f$$ with respect to $$x$$. This only means that we find the derivative of this function while pretending that y is constant.
 
 $$\frac{\partial f}{\partial x} = 2xsin(y)$$
 
-then the partial derivative of f with respect to y
+then the partial derivative of $$f$$ with respect to $$y$$
 
 $$\frac{\partial f}{\partial x} = x^2cos(y)$$
 
-the gradient of f(x,y) is simply a vector of these 2 values
+the gradient of $$f(x,y)$$ is simply a vector of these 2 values
 
 
 The final formula:
 
 \nabla f(x,y) = \begin{bmatrix}\frac{\partial f}{\partial x} \\\\ \frac{\partial f}{\partial y} \end{bmatrix}= \begin{bmatrix} x^2\cos(y) \\\\ 2x\sin(y) \end{bmatrix}
 
-This is the gradient of the function f at the coordinates x and y. The process is the same for any number of dimensions.
+This is the gradient of the function $$f$$ at the coordinates $$x$$ and $$y$$. The process is the same for any number of dimensions.
 
 Hopefully, this helped you understand the math behind the gradient descent. 
 
