@@ -21,7 +21,7 @@ def shape_list(x):
     return [dynamic[i] if s is None else s for i, s in enumerate(static)]
     
     
-
+{% highlight javascript %}
 
       def shape_list(x):
           """Deal with dynamic vectors cleanly."""
@@ -33,3 +33,4 @@ def shape_list(x):
           # If the size of the i-th dimension is not known (i.e., it is None in the static shape),
           # use the size from the dynamic shape instead
           return [dynamic[i] if s is None else s for i, s in enumerate(static)]
+{% endhighlight %}
