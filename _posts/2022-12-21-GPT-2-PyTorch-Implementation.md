@@ -1,9 +1,10 @@
 ---
 published: true
 ---
----
-published: false
----
+{% highlight javascript %}
+document.write("JavaScript is a simple language for javatpoint learners");
+{% endhighlight %}
+
 ## A New Post
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
