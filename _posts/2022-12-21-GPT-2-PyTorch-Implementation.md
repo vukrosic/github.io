@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 OpenAI released GPT-2 Tensorflow implementation, so we will implement it in PyTorch.
 
