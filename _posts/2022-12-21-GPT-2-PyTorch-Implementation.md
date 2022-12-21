@@ -1,10 +1,6 @@
 ---
 published: true
 ---
-{% highlight javascript %}
-document.write("JavaScript is a simple language for javatpoint learners");
-{% endhighlight %}
-
 ## Deal with dynamic vectors cleanly.
     
 {% highlight python %}
